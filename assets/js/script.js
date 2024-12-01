@@ -62,6 +62,7 @@ import MYSQL_NOTES from './mysql.js';
 import ERD_NOTES from './erd.js';
 import DFD_NOTES from './dfd.js';
 import CRUD_NOTES from './crud.js';
+import GITHUB_NOTES from './github.js';
 
 // Create a mapping of topic content
 const TOPIC_CONTENT = {
@@ -73,6 +74,7 @@ const TOPIC_CONTENT = {
     'erd':ERD_NOTES,
     'dfd':DFD_NOTES,
     'crud':CRUD_NOTES,
+    'github':GITHUB_NOTES,
 };
 
 let currentIndex = 0;
