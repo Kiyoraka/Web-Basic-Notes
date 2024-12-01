@@ -3,22 +3,27 @@ const WEBSITE_SAMPLES = {
     title: 'Sample Websites by Category',
     sections: [
         {
-            title: 'Sample 1',
-            content: `Sample 1 Description
+            title: 'Basic Web Calculator',
+            content: `A modern, responsive web calculator with theme switching capability and a clean interface design.
 
 Features:
-• Sample 1 Features
-• Sample 1 Features
-• Sample 1 Features
-
+• Basic arithmetic operations (addition, subtraction, multiplication, division)
+• Light/Dark theme switching functionality
+• Responsive design for all devices (desktop, tablet, mobile)
+• Error handling for invalid operations (e.g., division by zero)
+• Clean, intuitive user interface
+• Floating-point precision handling
+• Clear function to reset calculations
 
 Technologies Used:
-• Sample 1 Technology
-• Sample 1 Technology
-• Sample 1 Technology
-• Sample 1 Technology
+• HTML5 for semantic structure
+• CSS3 with custom properties for theming
+• JavaScript ES6+ for calculator logic
+• CSS Grid for button layout
+• Flexbox for responsive positioning
+• CSS Media Queries for device adaptation
 
-https://github.com/your-username/sample-1`
+https://kiyoraka.github.io/Basic-Calculator/`
         },
         {
             title: 'Sample 2',
