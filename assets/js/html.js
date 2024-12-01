@@ -16,23 +16,21 @@ Key Points:
             title: 'Basic Structure',
             content: `Every HTML document follows a basic structure:
 
-<pre class="code-block">
-&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-    &lt;head&gt;
-        &lt;title&gt;Page Title&lt;/title&gt;
-    &lt;/head&gt;
-    &lt;body&gt;
-        &lt;!-- Content goes here --&gt;
-    &lt;/body&gt;
-&lt;/html&gt;
-</pre>
-
+\`\`\`<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Title</title>
+</head>
+<body>
+    <!-- Content goes here -->
+</body>
+</html>
+\`\`\`
 Essential Elements:
-• &lt;!DOCTYPE html&gt; - Declares the document type
-• &lt;html&gt; - Root element
-• &lt;head&gt; - Contains metadata
-• &lt;body&gt; - Contains visible content`
+• Declares the document type
+• Root element
+• Contains metadata
+• Contains visible content`
         },
         {
             title: 'Common HTML Elements',

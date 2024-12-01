@@ -6,6 +6,16 @@ const TOPICS = [
         icon: 'fa-globe'
     },
     {
+        id: 'css',
+        title: 'CSS',
+        icon: 'fa-asterisk'
+    },
+    {
+        id: 'js',
+        title: 'JavaScript',
+        icon: ' fa-play-circle'
+    },
+    {
         id: 'php',
         title: 'PHP',
         icon: 'fa-file'

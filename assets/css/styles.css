@@ -1,22 +1,24 @@
 :root {
     --primary-color: #4A90E2;
     --secondary-color: #67B26F;
-    --accent-color: #FF7B73;
+    --accent-color: #ff0d00;
     --background-color: #F0F4F8;
     --text-color: #2D3748;
     --card-background: #FFFFFF;
     --shadow-color: rgba(0, 0, 0, 0.1);
+    --footer-words:#000000;
 }
 
-/* Dark theme - using softer colors suitable for young eyes */
+/* Dark theme*/
 [data-theme="dark"] {
     --primary-color: #7EB6FF;
     --secondary-color: #98D8A0;
-    --accent-color: #FFB7B3;
+    --accent-color: #ff0d00;
     --background-color: #2A4365;
     --text-color: #E2E8F0;
     --card-background: #3A5A8C;
     --shadow-color: rgba(0, 0, 0, 0.2);
+    --footer-words:#FFFFFF;
 }
 
 * {
@@ -197,7 +199,8 @@ header {
 footer {
     text-align: center;
     padding: 1rem;
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--footer-words);
+    font-weight: bold;
     position: fixed;
     bottom: 0;
     left: 0;
