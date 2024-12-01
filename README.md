@@ -12,20 +12,18 @@ A comprehensive collection of beginner-friendly web development notes and exampl
 
 ## 🎯 Learning Goals
 - Understand fundamental web development concepts
-- Learn through practical, hands-on examples
 - Build a strong foundation in web technologies
 - Follow beginner-friendly explanations
 - Access organized, structured learning materials
 
 ## 💻 How to Use
-- Browse through topic-specific folders
-- View live examples on our website
-- Download code examples to practice
-- Follow step-by-step tutorials
+- Browse through topic-specific
+- View live examples 
+- Follow step-by-step
 - Use as supplementary classroom material
 
 ## 🔍 For Students
-This repository serves as your online notebook for web development basics. Each topic is explained in simple terms with practical examples you can try yourself.
+This repository serves as your online notebook for web development basics. Each topic is explained in simple terms.
 
 ## 👥 For Teachers
 These materials are classroom-ready and can be used as supplementary teaching resources. Feel free to incorporate them into your curriculum.

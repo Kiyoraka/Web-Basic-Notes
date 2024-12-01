@@ -59,11 +59,13 @@ Lists:
             title: 'Forms and Input',
             content: `HTML forms are used to collect user input:
 
+\`\`\`html
 <form action="/submit" method="post">
     <input type="text" name="username">
     <input type="password" name="password">
     <button type="submit">Submit</button>
 </form>
+\`\`\`
 
 Common Form Elements:
 • <input> - Various input types

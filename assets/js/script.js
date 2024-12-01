@@ -3,12 +3,12 @@ const TOPICS = [
     {
         id: 'html',
         title: 'HTML',
-        icon: 'fa-html5'
+        icon: 'fa-globe'
     },
     {
         id: 'php',
         title: 'PHP',
-        icon: 'fa-php'
+        icon: 'fa-file'
     },
     {
         id: 'mysql',
@@ -33,7 +33,7 @@ const TOPICS = [
     {
         id: 'github',
         title: 'GitHub',
-        icon: 'fa-github'
+        icon: 'fa-code-fork'
     }
 ];
 
@@ -140,7 +140,14 @@ function createTopicElement(topic) {
                 ${topicContent.sections.map(section => `
                     <div class="notes-section">
                         <h3 class="section-title">${section.title}</h3>
-                        <div class="section-content">${section.content.replace(/\n/g, '<br>')}</div>
+                        <div class="section-content">
+                            ${section.content
+                                .replace(/</g, '&lt;')
+                                .replace(/>/g, '&gt;')
+                                .replace(/```([\s\S]*?)```/g, (_, code) => `<pre class="code-block">${code}</pre>`)
+                                .replace(/`([^`]+)`/g, '<code>$1</code>')
+                                .replace(/\n/g, '<br>')}
+                        </div>
                     </div>
                 `).join('')}
             </div>
