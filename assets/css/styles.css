@@ -51,6 +51,7 @@ header {
     text-align: center;
     padding: 2rem 0;
     background: linear-gradient(to right, transparent, var(--shadow-color), transparent);
+    position: relative;
 }
 
 .site-title {
@@ -70,6 +71,40 @@ header {
     flex-direction: column;
     align-items: center;
     padding: 2rem;
+    gap: 1.5rem; /* Add space between controls and notes frame */
+}
+
+.controls-panel {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    justify-content: center; /* Center the buttons horizontally */
+    padding: 0 1rem;
+    position: relative;
+    z-index: 1;
+}
+
+.control-btn {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    cursor: pointer;
+    color: #B8D7FF;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+.control-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.3);
+    color: #FFFFFF;
 }
 
 .notes-frame {
@@ -80,7 +115,6 @@ header {
     border-radius: 15px;
     box-shadow: 0 4px 15px var(--shadow-color);
     position: relative;
-    margin-bottom: 2rem;
     display: flex;
     flex-direction: column;
     transform: scale(0.7);
@@ -138,32 +172,6 @@ header {
     color: var(--secondary-color);
 }
 
-.controls-panel {
-    display: flex;
-    gap: 1rem;
-    margin-top: 1rem;
-}
-
-.control-btn {
-    background: var(--card-background);
-    border: none;
-    padding: 0.8rem 1.5rem;
-    border-radius: 10px;
-    cursor: pointer;
-    color: var(--primary-color);
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    font-size: 1.1rem;
-    transition: all 0.3s ease;
-    box-shadow: 0 2px 5px var(--shadow-color);
-}
-
-.control-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px var(--shadow-color);
-}
-
 .theme-toggle {
     position: absolute;
     top: 1rem;
@@ -184,12 +192,79 @@ footer {
     text-align: center;
     padding: 1rem;
     color: var(--secondary-color);
+    margin-top: 2rem;
 }
 
 footer .fa-heart {
     color: var(--accent-color);
 }
 
+/* Topics menu styles */
+.topics-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.topics-menu-content {
+    background: var(--card-background);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px var(--shadow-color);
+    max-width: 90%;
+    width: 500px;
+}
+
+.topics-menu h3 {
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.topics-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.topic-item {
+    background: none;
+    border: none;
+    padding: 1rem;
+    text-align: left;
+    color: var(--text-color);
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.topic-item:hover {
+    background: var(--primary-color);
+    color: var(--card-background);
+}
+
+.topic-item.active {
+    background: var(--secondary-color);
+    color: var(--card-background);
+}
+
+.topic-item i {
+    width: 24px;
+    text-align: center;
+}
+
+/* Responsive design */
 @media (max-width: 768px) {
     .notes-frame {
         width: 100%;
@@ -206,5 +281,11 @@ footer .fa-heart {
     .controls-panel {
         flex-wrap: wrap;
         justify-content: center;
+        padding: 0;
+    }
+
+    .site-title {
+        font-size: 2rem;
+        padding: 0 1rem;
     }
 }
