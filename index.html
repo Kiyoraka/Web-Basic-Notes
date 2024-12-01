@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Study Notes</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="background-pattern"></div>
+
+    <header>
+        <h1 class="site-title">Web Development Study Notes</h1>
+        <p class="site-subtitle">Your journey into web development begins here!</p>
+        <button class="theme-toggle">
+            <i class="fas fa-sun"></i>
+        </button>
+    </header>
+
+    <main class="container">
+        <div class="notes-frame">
+            <div id="notesSlider" class="notes-container">
+                <!-- Content will be inserted by JavaScript -->
+            </div>
+
+            <div class="navigation">
+                <button id="prevBtn" class="nav-button" disabled>
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+                <div class="page-indicator">
+                    <span id="currentPage">1</span>/<span id="totalPages">1</span>
+                </div>
+                <button id="nextBtn" class="nav-button">
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="controls-panel">
+            <button id="topicsBtn" class="control-btn">
+                <i class="fas fa-list"></i> Topics
+            </button>
+            <button id="fontSizeBtn" class="control-btn">
+                <i class="fas fa-text-height"></i> Text Size
+            </button>
+        </div>
+    </main>
+
+    <footer>
+        <p>Created with <i class="fas fa-heart"></i> for young developers</p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
