@@ -63,6 +63,7 @@ import ERD_NOTES from './erd.js';
 import DFD_NOTES from './dfd.js';
 import CRUD_NOTES from './crud.js';
 import GITHUB_NOTES from './github.js';
+import WEBSITE_SAMPLES from './sample.js';
 
 // Create a mapping of topic content
 const TOPIC_CONTENT = {
@@ -75,6 +76,7 @@ const TOPIC_CONTENT = {
     'dfd':DFD_NOTES,
     'crud':CRUD_NOTES,
     'github':GITHUB_NOTES,
+    'sample':WEBSITE_SAMPLES,
 };
 
 let currentIndex = 0;
@@ -160,6 +162,45 @@ function createTopicElement(topic) {
         `;
     }
 
+    // function to handle URL conversion to buttons
+    function convertUrlsToButtons(text) {
+        // Match URLs pattern
+        const urlPattern = /(?:View Demo[^]*)?(https?:\/\/[^\s]+)/g;
+        return text.replace(urlPattern, (match, url) => {
+            return `
+                <button onclick="window.open('${url}', '_blank')" 
+                        class="view-demo-btn">
+                    <i class="fas fa-external-link-alt"></i> Click Me
+                </button>
+            `;
+        });
+    }
+
+    // Add the button styles
+    const buttonStyle = document.createElement('style');
+    buttonStyle.textContent = `
+        .view-demo-btn {
+            display: inline-block;
+            padding: 8px 16px;
+            background-color: #0066cc;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            margin-top: 10px;
+            transition: all 0.3s ease;
+        }
+        .view-demo-btn:hover {
+            background-color: #0052a3;
+            transform: translateY(-2px);
+        }
+        .view-demo-btn i {
+            margin-right: 8px;
+        }
+    `;
+    document.head.appendChild(buttonStyle);
+
     return `
         <div class="notes-content" style="font-size: ${currentFontSize}em">
             <h2 class="topic-title">
@@ -171,12 +212,14 @@ function createTopicElement(topic) {
                     <div class="notes-section">
                         <h3 class="section-title">${section.title}</h3>
                         <div class="section-content">
-                            ${section.content
-                                .replace(/</g, '&lt;')
-                                .replace(/>/g, '&gt;')
-                                .replace(/```([\s\S]*?)```/g, (_, code) => `<pre class="code-block">${code}</pre>`)
-                                .replace(/`([^`]+)`/g, '<code>$1</code>')
-                                .replace(/\n/g, '<br>')}
+                            ${convertUrlsToButtons(
+                                section.content
+                                    .replace(/</g, '&lt;')
+                                    .replace(/>/g, '&gt;')
+                                    .replace(/```([\s\S]*?)```/g, (_, code) => `<pre class="code-block">${code}</pre>`)
+                                    .replace(/`([^`]+)`/g, '<code>$1</code>')
+                                    .replace(/\n/g, '<br>')
+                            )}
                         </div>
                     </div>
                 `).join('')}

@@ -39,9 +39,12 @@ Think of it like:
 • Copy and save your token safely!
 
 3. First Time Setup:
-• Download Git from: https://git-scm.com/downloads
-• Download Setup-Git.bat for new users:
-  Visit: https://github.com/Kiyoraka/Git-OneClick/tree/main/New-User
+• Download Git: 
+https://git-scm.com/downloads
+
+• For new users, get Setup-Git.bat:
+https://github.com/Kiyoraka/Git-OneClick/tree/main/New-User
+
 • Run Setup-Git.bat and follow the prompts
 • Enter your name and email when asked
 • Enter your GitHub repo URL when prompted
@@ -53,17 +56,20 @@ Think of it like:
 
 1. Starting Commands:
 \`\`\`bash
-git init            # Start a new repository (or use Setup-Git.bat: https://github.com/Kiyoraka/Git-OneClick/tree/main/Basic)
+git init            # Start a new repository
 git clone URL       # Copy a repository from GitHub
 git status         # Check what's changed
 \`\`\`
+
+For easier setup, use Basic Setup-Git.bat:
+https://github.com/Kiyoraka/Git-OneClick/tree/main/Basic
 
 2. Making Changes:
 \`\`\`bash
 git add .                # Add all changes
 git commit -m "message"  # Save changes
 git push                 # Send to GitHub
-git pull                 # Get latest changes
+git pull                # Get latest changes
 \`\`\`
 
 3. Checking Changes:
@@ -165,8 +171,11 @@ GitHub Desktop Features:
 • Simple commit process
 • Branch visualization
 
+Get GitHub Desktop:
+https://desktop.github.com
+
 Steps to Use:
-1. Download GitHub Desktop
+1. Download and install
 2. Log in with GitHub account
 3. Clone repositories
 4. Make changes visually
