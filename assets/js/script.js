@@ -51,12 +51,13 @@ const TOPICS = [
 // Importing notes
 import HTML_NOTES from './html.js';
 import CSS_NOTES from './css.js';
+import JS_NOTES from './js.js';
 
 // Create a mapping of topic content
 const TOPIC_CONTENT = {
     'html': HTML_NOTES,
     'css':CSS_NOTES,
-    // Add other topics as they are created
+    'js':JS_NOTES,
 };
 
 let currentIndex = 0;
