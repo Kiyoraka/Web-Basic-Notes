@@ -71,7 +71,8 @@ header {
     flex-direction: column;
     align-items: center;
     padding: 2rem;
-    gap: 1.5rem; /* Add space between controls and notes frame */
+    gap: 1.5rem;
+    margin-bottom: 4rem; /* Add space for footer */
 }
 
 .controls-panel {
@@ -117,8 +118,9 @@ header {
     position: relative;
     display: flex;
     flex-direction: column;
-    transform: scale(0.7);
+    transform: scale(0.65);
     transform-origin: top center;
+    margin-bottom: -4rem;
 }
 
 .notes-container {
@@ -191,8 +193,12 @@ header {
 footer {
     text-align: center;
     padding: 1rem;
-    color: var(--secondary-color);
-    margin-top: 2rem;
+    color: rgba(255, 255, 255, 0.6);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.1));
 }
 
 footer .fa-heart {
