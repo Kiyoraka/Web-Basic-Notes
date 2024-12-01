@@ -52,12 +52,14 @@ const TOPICS = [
 import HTML_NOTES from './html.js';
 import CSS_NOTES from './css.js';
 import JS_NOTES from './js.js';
+import PHP_NOTES from './php.js';
 
 // Create a mapping of topic content
 const TOPIC_CONTENT = {
     'html': HTML_NOTES,
     'css':CSS_NOTES,
     'js':JS_NOTES,
+    'php':PHP_NOTES,
 };
 
 let currentIndex = 0;
