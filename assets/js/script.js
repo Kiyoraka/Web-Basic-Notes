@@ -44,6 +44,11 @@ const TOPICS = [
         id: 'github',
         title: 'GitHub',
         icon: 'fa-code-fork'
+    },
+    {
+        id: 'sample',
+        title: 'Example of the website',
+        icon: 'fa-bookmark'
     }
 ];
 
@@ -56,6 +61,7 @@ import PHP_NOTES from './php.js';
 import MYSQL_NOTES from './mysql.js';
 import ERD_NOTES from './erd.js';
 import DFD_NOTES from './dfd.js';
+import CRUD_NOTES from './crud.js';
 
 // Create a mapping of topic content
 const TOPIC_CONTENT = {
@@ -66,6 +72,7 @@ const TOPIC_CONTENT = {
     'mysql':MYSQL_NOTES,
     'erd':ERD_NOTES,
     'dfd':DFD_NOTES,
+    'crud':CRUD_NOTES,
 };
 
 let currentIndex = 0;
