@@ -35,7 +35,6 @@ https://kiyoraka.github.io/Basic-Calculator/`
         • Rotating asteroid enemies with physics-based movement
         • Parallax scrolling space background for immersion
         • Score tracking and lives system
-        • Responsive design for different screen sizes
         • Clean, modern user interface with game menus
         • Collision detection and game over state
         
@@ -44,7 +43,6 @@ https://kiyoraka.github.io/Basic-Calculator/`
         • CSS3 with custom properties for styling and animations
         • JavaScript ES6+ for game logic and controls
         • Custom sprite animations and rotations
-        • Responsive design with media queries
         • Game state management
         • Asset preloading system
         
