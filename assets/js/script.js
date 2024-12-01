@@ -55,6 +55,7 @@ import JS_NOTES from './js.js';
 import PHP_NOTES from './php.js';
 import MYSQL_NOTES from './mysql.js';
 import ERD_NOTES from './erd.js';
+import DFD_NOTES from './dfd.js';
 
 // Create a mapping of topic content
 const TOPIC_CONTENT = {
@@ -64,6 +65,7 @@ const TOPIC_CONTENT = {
     'php':PHP_NOTES,
     'mysql':MYSQL_NOTES,
     'erd':ERD_NOTES,
+    'dfd':DFD_NOTES,
 };
 
 let currentIndex = 0;
