@@ -1,12 +1,15 @@
 :root {
     --primary-color: #4A90E2;
-    --secondary-color: #67B26F;
+    --secondary-color: #088d13;
     --accent-color: #ff0d00;
     --background-color: #F0F4F8;
     --text-color: #2D3748;
     --card-background: #FFFFFF;
     --shadow-color: rgba(0, 0, 0, 0.1);
     --footer-words:#000000;
+    --control-btn:#0077ff;
+    --hover-btn:#55a1f8;
+    --reverse-color:#FFFFFF;
 }
 
 /* Dark theme*/
@@ -19,6 +22,9 @@
     --card-background: #3A5A8C;
     --shadow-color: rgba(0, 0, 0, 0.2);
     --footer-words:#FFFFFF;
+    --control-btn:#bbdbff;
+    --hover-btn:#eff6fd;
+    --reverse-color:#0077ff;
 }
 
 * {
@@ -64,6 +70,7 @@ header {
 
 .site-subtitle {
     font-style: italic;
+    font-weight: bold;
     color: var(--secondary-color);
 }
 
@@ -90,11 +97,11 @@ header {
 
 .control-btn {
     background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid var(--control-btn);
     padding: 0.8rem 1.5rem;
     border-radius: 25px;
     cursor: pointer;
-    color: #B8D7FF;
+    color: var(--control-btn);
     display: flex;
     align-items: center;
     gap: 0.5rem;
@@ -105,9 +112,9 @@ header {
 }
 
 .control-btn:hover {
-    background: rgba(255, 255, 255, 0.2);
-    border-color: rgba(255, 255, 255, 0.3);
-    color: #FFFFFF;
+    background: var(--hover-btn);
+    border-color: var(--hover-btn);
+    color: var(--reverse-color);
 }
 
 .notes-frame {
