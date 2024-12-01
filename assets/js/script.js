@@ -37,6 +37,16 @@ const TOPICS = [
     }
 ];
 
+
+// Importing notes
+import HTML_NOTES from './html.js';
+
+// Create a mapping of topic content
+const TOPIC_CONTENT = {
+    'html': HTML_NOTES,
+    // Add other topics as they are created
+};
+
 let currentIndex = 0;
 let currentFontSize = 1; // Base font size multiplier
 let isAnimating = false;
@@ -96,23 +106,43 @@ function updateThemeIcon(theme) {
 
 // Create topic element HTML
 function createTopicElement(topic) {
+    const topicContent = TOPIC_CONTENT[topic.id];
+    
+    if (!topicContent) {
+        return `
+            <div class="notes-content" style="font-size: ${currentFontSize}em">
+                <h2 class="topic-title">
+                    <i class="fas ${topic.icon}"></i>
+                    ${topic.title}
+                </h2>
+                <div class="topic-content">
+                    <div style="text-align: center; padding: 2rem;">
+                        <i class="fas fa-book-open" style="font-size: 3em; color: var(--primary-color); margin-bottom: 1rem;"></i>
+                        <p style="color: var(--secondary-color); font-size: 1.2em;">
+                            Notes for ${topic.title} will appear here soon!
+                        </p>
+                        <p style="color: var(--text-color); margin-top: 1rem;">
+                            Use the arrows or keyboard to navigate between topics
+                        </p>
+                    </div>
+                </div>
+            </div>
+        `;
+    }
+
     return `
         <div class="notes-content" style="font-size: ${currentFontSize}em">
             <h2 class="topic-title">
                 <i class="fas ${topic.icon}"></i>
-                ${topic.title}
+                ${topicContent.title}
             </h2>
             <div class="topic-content">
-                <!-- Content placeholder with a friendly message -->
-                <div style="text-align: center; padding: 2rem;">
-                    <i class="fas fa-book-open" style="font-size: 3em; color: var(--primary-color); margin-bottom: 1rem;"></i>
-                    <p style="color: var(--secondary-color); font-size: 1.2em;">
-                        Notes for ${topic.title} will appear here soon!
-                    </p>
-                    <p style="color: var(--text-color); margin-top: 1rem;">
-                        Use the arrows or keyboard to navigate between topics
-                    </p>
-                </div>
+                ${topicContent.sections.map(section => `
+                    <div class="notes-section">
+                        <h3 class="section-title">${section.title}</h3>
+                        <div class="section-content">${section.content.replace(/\n/g, '<br>')}</div>
+                    </div>
+                `).join('')}
             </div>
         </div>
     `;
