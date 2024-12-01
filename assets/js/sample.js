@@ -26,22 +26,29 @@ Technologies Used:
 https://kiyoraka.github.io/Basic-Calculator/`
         },
         {
-            title: 'Sample 2',
-            content: `Sample 2 Description
-
-Features:
-• Sample 2 Features
-• Sample 2 Features
-• Sample 2 Features
-
-
-Technologies Used:
-• Sample 2 Technology
-• Sample 2 Technology
-• Sample 2 Technology
-• Sample 2 Technology
-
-https://github.com/your-username/sample-2`
+            title: 'Space Defense Game',
+            content: `An engaging space shooter game where players defend Earth from incoming asteroids with smooth controls and captivating visuals.
+        
+        Features:
+        • Dynamic spaceship movement with keyboard controls
+        • Shooting mechanics with auto-fire capability
+        • Rotating asteroid enemies with physics-based movement
+        • Parallax scrolling space background for immersion
+        • Score tracking and lives system
+        • Responsive design for different screen sizes
+        • Clean, modern user interface with game menus
+        • Collision detection and game over state
+        
+        Technologies Used:
+        • HTML5 Canvas for game rendering
+        • CSS3 with custom properties for styling and animations
+        • JavaScript ES6+ for game logic and controls
+        • Custom sprite animations and rotations
+        • Responsive design with media queries
+        • Game state management
+        • Asset preloading system
+        
+        https://kiyoraka.github.io/Space-Defense/`
         }
     ]
 };
