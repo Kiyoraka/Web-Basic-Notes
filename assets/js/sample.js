@@ -6,24 +6,24 @@ const WEBSITE_SAMPLES = {
             title: 'Basic Web Calculator',
             content: `A modern, responsive web calculator with theme switching capability and a clean interface design.
 
-Features:
-• Basic arithmetic operations (addition, subtraction, multiplication, division)
-• Light/Dark theme switching functionality
-• Responsive design for all devices (desktop, tablet, mobile)
-• Error handling for invalid operations (e.g., division by zero)
-• Clean, intuitive user interface
-• Floating-point precision handling
-• Clear function to reset calculations
+        Features:
+        • Basic arithmetic operations (addition, subtraction, multiplication, division)
+        • Light/Dark theme switching functionality
+        • Responsive design for all devices (desktop, tablet, mobile)
+        • Error handling for invalid operations (e.g., division by zero)
+        • Clean, intuitive user interface
+        • Floating-point precision handling
+        • Clear function to reset calculations
 
-Technologies Used:
-• HTML5 for semantic structure
-• CSS3 with custom properties for theming
-• JavaScript ES6+ for calculator logic
-• CSS Grid for button layout
-• Flexbox for responsive positioning
-• CSS Media Queries for device adaptation
+        Technologies Used:
+        • HTML5 for semantic structure
+        • CSS3 with custom properties for theming
+        • JavaScript ES6+ for calculator logic
+        • CSS Grid for button layout
+        • Flexbox for responsive positioning
+        • CSS Media Queries for device adaptation
 
-https://kiyoraka.github.io/Basic-Calculator/`
+        https://kiyoraka.github.io/Basic-Calculator/`
         },
         {
             title: 'Space Defense Game',
