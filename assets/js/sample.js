@@ -47,6 +47,30 @@ https://kiyoraka.github.io/Basic-Calculator/`
         • Asset preloading system
         
         https://kiyoraka.github.io/Space-Defense/`
+        },
+        {
+            title: 'Student Login Form',
+            content: `A modern and responsive student login interface with form validation and clean design, perfect for educational platforms and student portals.
+        
+        Features:
+        • Secure form validation for student ID and password
+        • Password visibility toggle with eye icon
+        • Remember me functionality
+        • Error handling with visual feedback
+        • Forgot password and registration links
+        • Clean and professional interface
+        • Mobile-responsive design
+        
+        Technologies Used:
+        • HTML5 for semantic structure
+        • CSS3 for modern styling and animations
+        • JavaScript for form validation and interactions
+        • Font Awesome for professional icons
+        • CSS Flexbox for responsive layouts
+        • Client-side form validation
+        • Local storage for preferences
+        
+        https://kiyoraka.github.io/student-loginform/`
         }
     ]
 };
