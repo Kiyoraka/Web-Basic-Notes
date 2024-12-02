@@ -1,6 +1,6 @@
 // php.js
 const PHP_NOTES = {
-    title: 'PHP (PHP Hypertext Preprocessor)',
+    title: 'PHP (Hypertext Preprocessor)',
     sections: [
         {
             title: 'What is PHP?',
