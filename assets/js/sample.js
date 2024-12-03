@@ -71,6 +71,28 @@ const WEBSITE_SAMPLES = {
         • Local storage for preferences
         
         https://kiyoraka.github.io/student-loginform/`
+        },
+        {
+            title: 'Customer Feedback Form',
+            content: `A simple and efficient customer feedback form that allows users to submit their experiences and ratings.
+        
+        Features:
+        • Required field validation for essential information
+        • Star rating system for experience evaluation
+        • Simple and clean interface
+        • Success message display
+        • Phone number optional field
+        • Input validation for email format
+        
+        Technologies Used:
+        • HTML for form structure
+        • PHP for server-side processing
+        • MySQL for data storage
+        • JavaScript for form validation
+        • CSS for minimal styling
+        • XAMPP for local development
+        
+        https://github.com/Kiyoraka/Customer-FeedbackForm`
         }
     ]
 };
