@@ -141,7 +141,32 @@ const WEBSITE_SAMPLES = {
             • XAMPP for local development
             
             https://github.com/Kiyoraka/Client-LoginFormV2`
-         }
+         },
+         {
+            title: 'Book Search System',
+            content: `A dynamic and efficient PHP-based search system with a modern interface for finding books across multiple categories with natural language queries.
+            
+            Features:
+            • Multi-field search across titles, categories, and descriptions
+            • Real-time results display with clean formatting
+            • Secure database handling with prepared statements
+            • Natural language query processing
+            • XSS protection and input sanitization
+            • Responsive design for all devices
+            • Multiple book categories support
+            • Clean, intuitive user interface
+            
+            Technologies Used:
+            • HTML5 for semantic structure
+            • PHP 7.4+ for server-side processing
+            • MySQL for database management
+            • PDO/MySQLi for database connections
+            • CSS3 for modern styling
+            • JavaScript for dynamic interactions
+            • XAMPP for local development
+            
+            https://github.com/Kiyoraka/Book-SearchForm`
+        }
     ]
 };
 
