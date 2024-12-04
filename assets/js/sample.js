@@ -93,6 +93,30 @@ const WEBSITE_SAMPLES = {
         • XAMPP for local development
         
         https://github.com/Kiyoraka/Customer-FeedbackForm`
+        },
+        {
+            title: 'Client Login Form v1',
+            content: `A simple and efficient login form that allows users to authenticate with modern design and client-side validation.
+            
+            Features:
+            • Required field validation for username and password
+            • Password visibility toggle with eye icon
+            • Simple and clean dark-themed interface
+            • Success message display after login
+            • Remember me functionality 
+            • Input validation for credentials
+            • Floating logo animation
+            • Responsive design for all devices
+            
+            Technologies Used:
+            • HTML for form structure
+            • CSS for modern dark theme styling
+            • JavaScript for client-side validation
+            • Local Storage for remember me feature
+            • Font Awesome for icons
+            • CSS animations for logo
+            
+            https://kiyoraka.github.io/Client-LoginForm-V1/`
         }
     ]
 };
