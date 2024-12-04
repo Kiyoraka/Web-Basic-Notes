@@ -117,7 +117,31 @@ const WEBSITE_SAMPLES = {
             • CSS animations for logo
             
             https://kiyoraka.github.io/Client-LoginForm-V1/`
-        }
+        },
+        {
+            title: 'Client Login Form v2',
+            content: `A secure and efficient PHP-based login system with a modern interface featuring a glowing bicycle shop logo animation.
+            
+            Features:
+            • Basic session management for authentication
+            • Cookie handling for remember me functionality 
+            • Password visibility toggle with eye icon
+            • Simple and clean dark-themed interface
+            • Glowing logo animation effect
+            • Success message display after login
+            • Input validation for credentials
+            • Responsive design for all devices
+            
+            Technologies Used:
+            • HTML for form structure
+            • PHP for basic session management
+            • JavaScript for password visibility toggle
+            • CSS for modern styling and animations
+            • Font Awesome for icons
+            • XAMPP for local development
+            
+            https://github.com/Kiyoraka/Client-LoginFormV2`
+         }
     ]
 };
 
